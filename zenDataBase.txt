@@ -1,0 +1,247 @@
+ use zen
+switched to db zen
+zen> db.codekata.insertMany([{
+...     "user_name":"fabian",
+...     "problems_solved":88
+... },
+... {
+...     "user_name":"raja",
+...     "problems_solved":18
+... },
+... {
+...     "user_name":"fernando",
+...     "problems_solved":48
+... },
+... {
+...     "user_name":"rohit",
+...     "problems_solved":58
+... },
+... {
+...     "user_name":"virat",
+...     "problems_solved":45
+... },
+... {
+...     "user_name":"dhawan",
+...     "problems_solved":91
+... },
+... {
+...     "user_name":"dhoni",
+...     "problems_solved":11
+... }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65bf67fad4ca41e8337d198e'),
+    '1': ObjectId('65bf67fad4ca41e8337d198f'),
+    '2': ObjectId('65bf67fad4ca41e8337d1990'),
+    '3': ObjectId('65bf67fad4ca41e8337d1991'),
+    '4': ObjectId('65bf67fad4ca41e8337d1992'),
+    '5': ObjectId('65bf67fad4ca41e8337d1993'),
+    '6': ObjectId('65bf67fad4ca41e8337d1994')
+  }
+}
+zen> db.company_drives.insertMany([{
+...     "company_name":"hcl",
+...     "date":ISODate("2020-09-25"),
+...     "students_appeared":"fabian,dineshwaran,raja,antony,fernando"
+... },
+... {
+...     "company_name":"cts",
+...     "date":ISODate("2020-10-16"),
+...     "students_appeared":"anabel,sanjay,ebin,john,infant"
+... },
+... {
+...     "company_name":"tcs",
+...     "date":ISODate("2020-10-27"),
+...     "students_appeared":"virat,tammim,ashok,sri,abi"
+... },
+... {
+...     "company_name":"zoho",
+...     "date":ISODate("2020-11-15"),
+...     "students_appeared":"naveen,suvan,felix,jethro,ashwin"
+... },
+... {
+...     "company_name":"guvi",
+...     "date":ISODate("2020-11-25"),
+...     "students_appeared":"jeshwin,jack,rohit,yogesh,edwin"
+... }]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65bf6834d4ca41e8337d1995'),
+    '1': ObjectId('65bf6834d4ca41e8337d1996'),
+    '2': ObjectId('65bf6834d4ca41e8337d1997'),
+    '3': ObjectId('65bf6834d4ca41e8337d1998'),
+    '4': ObjectId('65bf6834d4ca41e8337d1999')
+  }
+}
+zen> db.mentors.inserMany([{
+...     "mentor_name":"sanjay",
+...     "mentees_count":35
+... },
+... {
+...     "mentor_name":"pugazharasan",
+...     "mentees_count":14
+... },
+... {
+...     "mentor_name":"adhithyan",
+...     "mentees_count":11
+... },
+... {
+...     "mentor_name":"fernando",
+...     "mentees_count":9
+... },
+... {
+...     "mentor_name":"srivathsan",
+...     "mentees_count":44
+... },
+... {
+...     "mentor_name":"karthik",
+...     "mentees_count":29
+... }]);
+TypeError: db.mentors.inserMany is not a function
+...     "mentor_name":"sanjay",
+...     "mentees_count":35
+... },
+... {
+...     "mentor_name":"pugazharasan",
+...     "mentees_count":14
+... },
+... {
+...     "mentor_name":"adhithyan",
+...     "mentees_count":11
+... },
+... {
+...     "mentor_name":"fernando",
+...     "mentees_count":9
+... },
+... {
+...     "mentor_name":"srivathsan",
+...     "mentees_count":44
+... },
+... {
+...     "mentor_name":"karthik",
+...     "mentees_count":29
+... }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65bf687fd4ca41e8337d199a'),
+    '1': ObjectId('65bf687fd4ca41e8337d199b'),
+    '2': ObjectId('65bf687fd4ca41e8337d199c'),
+    '3': ObjectId('65bf687fd4ca41e8337d199d'),
+    '4': ObjectId('65bf687fd4ca41e8337d199e'),
+    '5': ObjectId('65bf687fd4ca41e8337d199f')
+  }
+}
+zen> db.topics.insertMany([{
+...     "topic":"javascript_Day1",
+...     "month":"october",
+...     "task":"functions"
+... },
+... {
+...     "topic":"javascript_Day2",
+...     "month":"october",
+...     "task":"for loops"
+... },
+... {
+...     "topic":"javascript_Day3",
+...     "month":"october",
+...     "task":"Oops"
+... },
+... {
+...     "topic":"html_Day1",
+...     "month":"november",
+...     "task":"blog about html"
+... },
+... {
+...     "topic":"html_Day2",
+...     "month":"november",
+...     "task":"elements/tags"
+... },
+... {
+...     "topic":"html_Day3",
+...     "month":"november",
+...     "task":"inputs"
+... }]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65bf68a0d4ca41e8337d19a0'),
+    '1': ObjectId('65bf68a0d4ca41e8337d19a1'),
+    '2': ObjectId('65bf68a0d4ca41e8337d19a2'),
+    '3': ObjectId('65bf68a0d4ca41e8337d19a3'),
+    '4': ObjectId('65bf68a0d4ca41e8337d19a4'),
+    '5': ObjectId('65bf68a0d4ca41e8337d19a5')
+  }
+}
+zen> db.userTask.insertMany([{
+...     "user_name":"fabian",
+...     "date":ISODate("2020-10-16"),
+...     "attendance":"absent",
+...     "task_submission":"failed"
+... },
+... {
+...     "user_name":"raja",
+...     "date":ISODate("2020-10-20"),
+...     "attendance":"absent",
+...     "task_submission":"failed"
+... },
+... {
+...     "user_name":"fernando",
+...     "date":ISODate("2020-10-29"),
+...     "attendance":"present",
+...     "task_submission":"passes"
+... },
+... {
+...     "user_name":"virat",
+...     "date":ISODate("2020-11-01"),
+...     "attendance":"absent",
+...     "task_submission":"passed"
+... },
+... {
+...     "user_name":"rohit",
+...     "date":ISODate("2020-11-16"),
+...     "attendance":"present",
+...     "task_submission":"failed"
+... },
+... {
+...     "user_name":"dhoni",
+...     "date":ISODate("2020-11-17"),
+...     "attendance":"present",
+...     "task_submission":"passed"
+... }]);
+
+//1. Find all the topics and tasks which are thought in the month of October
+
+db.topics.find({month:"october"})
+
+//2. Find all the company drives which appeared between 15-oct-2020 and 31-oct-2020
+
+db.company_drives.find({date:{$gt:new Date("2020-10-15"),$lt:new Date("2020-10-31")}})
+
+//3. Find all the company drives and students who are appeared for the placement
+
+db.company_drives.find().forEach(function(value){
+    print("Company Name : "+value.company_name);
+    print("Students Appeared : "+value.students_appeared);
+})
+
+//4. Find the number of problems solved by the user in codekata
+
+db.codekata.find().forEach(function(value){
+    print("Name : "+value.user_name);
+    print("Problems Solved : "+value.problems_solved)
+})
+
+//5. Find all the mentors with who has the mentee's count more than 15
+
+db.mentors.find({mentees_count:{$gt:15}})
+
+//6. Find the number of users who are absent and task is not submitted between 15-oct-2020 and 31-oct-2020
+
+db.usertask.find({date:{$gt:new Date("2020-10-15"),$lt:new Date("2020-10-31")}}).forEach(function(value){
+    print("Name : "+value.user_name);
+    print("Attendance :"+value.attendance);
+    print("Task : "+value.task_submission)
+})
